@@ -6,9 +6,9 @@ import "./App.css";
 const NodeDetails = React.lazy(() => import("./NodeDetails"));
 
 const nodes = [
-    { id: "start", x: 50, y: 150, label: "Start" },
-    { id: "decision", x: 250, y: 150, label: "Decision" },
-    { id: "end", x: 450, y: 150, label: "End" },
+    { id: "start", x: 100, y: 200, label: "Start" },
+    { id: "decision", x: 500, y: 200, label: "Decision" },
+    { id: "end", x: 900, y: 200, label: "End" },
 ];
 
 const links = [
@@ -58,7 +58,7 @@ function App() {
                 <button onClick={() => handleZoom(2)}>Detail</button>
             </div>
 
-            <svg ref={svgRef} width={600} height={400} style={{ border: "1px solid #ccc" }}>
+            <svg ref={svgRef} width={1000} height={400} style={{ border: "1px solid #ccc" }}>
                 <g ref={gRef}>
                     {links.map((link, i) => {
                         const source = nodes.find((n) => n.id === link.source)!;
@@ -77,7 +77,21 @@ function App() {
                     })}
                     {nodes.map((node) => (
                         <g key={node.id}>
-                            <circle cx={node.x} cy={node.y} r="20" fill="#69b3a2" />
+                            {node.id === "decision" ? (
+                                <rect
+                                    x={node.x - 100}
+                                    y={node.y - 50}
+                                    width="200"
+                                    height="100"
+                                    rx="10"
+                                    ry="10"
+                                    fill="#69b3a2"
+                                    stroke="#333"
+                                    strokeWidth="2"
+                                />
+                            ) : (
+                                <circle cx={node.x} cy={node.y} r="20" fill="#69b3a2" />
+                            )}
                             <text
                                 x={node.x}
                                 y={node.y}
