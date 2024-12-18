@@ -1,0 +1,107 @@
+[
+    {
+        "id": "start",
+        "x": 50,
+        "y": 300,
+        "label": "Start",
+        "level": "overview",
+        "shape": "circle",
+        "width": 50,
+        "height": 50,
+        "color": "#69b3a2",
+        "from": [],
+        "to": ["processA", "processB", "innerA1", "innerB1"]
+    },
+    {
+        "id": "processA",
+        "x": 500,
+        "y": 160,
+        "label": "Process A",
+        "level": "overview",
+        "shape": "rectangle",
+        "width": 500,
+        "height": 260,
+        "color": "#69b3a2",
+        "from": ["start"],
+        "to": ["end"]
+    },
+    {
+        "id": "processB",
+        "x": 500,
+        "y": 440,
+        "label": "Process B",
+        "level": "overview",
+        "shape": "rectangle",
+        "width": 500,
+        "height": 260,
+        "color": "#69b3a2",
+        "from": ["start"],
+        "to": ["end"]
+    },
+    {
+        "id": "innerA1",
+        "x": 350,
+        "y": 160,
+        "label": "Inner A1",
+        "level": "mid-level",
+        "shape": "rectangle",
+        "width": 150,
+        "height": 50,
+        "color": "#ffa500",
+        "from": ["start"],
+        "to": ["innerA2"]
+    },
+    {
+        "id": "innerA2",
+        "x": 650,
+        "y": 160,
+        "label": "Inner A2",
+        "level": "mid-level",
+        "shape": "rectangle",
+        "width": 150,
+        "height": 50,
+        "color": "#ffa500",
+        "from": ["innerA1"],
+        "to": ["end"]
+    },
+    {
+        "id": "innerB1",
+        "x": 350,
+        "y": 440,
+        "label": "Inner B1",
+        "level": "mid-level",
+        "shape": "rectangle",
+        "width": 150,
+        "height": 50,
+        "color": "#ffa500",
+        "from": ["start"],
+        "to": ["innerB2"]
+    },
+    {
+        "id": "innerB2",
+        "x": 650,
+        "y": 440,
+        "label": "Inner B2",
+        "level": "mid-level",
+        "shape": "rectangle",
+        "width": 150,
+        "height": 50,
+        "color": "#ffa500",
+        "from": ["innerB1"],
+        "to": ["end"]
+    },
+    {
+        "id": "end",
+        "x": 950,
+        "y": 300,
+        "label": "End",
+        "level": "overview",
+        "shape": "circle",
+        "width": 50,
+        "height": 50,
+        "color": "#69b3a2",
+        "from": ["processA", "processB", "innerA2", "innerB2"],
+        "to": []
+    }
+]
+
