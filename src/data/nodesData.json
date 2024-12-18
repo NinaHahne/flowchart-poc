@@ -1,13 +1,13 @@
 [
     {
         "id": "start",
-        "x": 50,
+        "x": 100,
         "y": 300,
         "label": "Start",
         "level": "overview",
         "shape": "circle",
-        "width": 50,
-        "height": 50,
+        "width": 80,
+        "height": 80,
         "color": "#69b3a2",
         "from": [],
         "to": ["processA", "processB", "innerA1", "innerB1"]
@@ -92,13 +92,13 @@
     },
     {
         "id": "end",
-        "x": 950,
+        "x": 900,
         "y": 300,
         "label": "End",
         "level": "overview",
         "shape": "circle",
-        "width": 50,
-        "height": 50,
+        "width": 80,
+        "height": 80,
         "color": "#69b3a2",
         "from": ["processA", "processB", "innerA2", "innerB2"],
         "to": []
