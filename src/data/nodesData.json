@@ -15,12 +15,12 @@
     {
         "id": "processA",
         "x": 500,
-        "y": 160,
+        "y": 190,
         "label": "Process A",
         "level": "overview",
         "shape": "rectangle",
         "width": 500,
-        "height": 260,
+        "height": 200,
         "color": "#69b3a2",
         "from": ["start"],
         "to": ["end"]
@@ -28,12 +28,12 @@
     {
         "id": "processB",
         "x": 500,
-        "y": 440,
+        "y": 410,
         "label": "Process B",
         "level": "overview",
         "shape": "rectangle",
         "width": 500,
-        "height": 260,
+        "height": 200,
         "color": "#69b3a2",
         "from": ["start"],
         "to": ["end"]
@@ -41,7 +41,7 @@
     {
         "id": "innerA1",
         "x": 350,
-        "y": 160,
+        "y": 190,
         "label": "Inner A1",
         "level": "mid-level",
         "shape": "rectangle",
@@ -54,7 +54,7 @@
     {
         "id": "innerA2",
         "x": 650,
-        "y": 160,
+        "y": 190,
         "label": "Inner A2",
         "level": "mid-level",
         "shape": "rectangle",
@@ -67,7 +67,7 @@
     {
         "id": "innerB1",
         "x": 350,
-        "y": 440,
+        "y": 410,
         "label": "Inner B1",
         "level": "mid-level",
         "shape": "rectangle",
@@ -80,7 +80,7 @@
     {
         "id": "innerB2",
         "x": 650,
-        "y": 440,
+        "y": 410,
         "label": "Inner B2",
         "level": "mid-level",
         "shape": "rectangle",
