@@ -1,0 +1,1 @@
+import{j as e}from"./index-DAr2hh1n.js";const s=()=>e.jsxs("div",{style:{marginTop:"20px",padding:"10px",border:"1px solid #ddd"},children:[e.jsx("h3",{children:"Node Details"}),e.jsx("p",{children:"Details about the selected node will appear here."})]});export{s as default};
